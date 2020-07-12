@@ -1,0 +1,5 @@
+package delegatekotlin
+
+fun main() {
+
+}
