@@ -1,5 +1,8 @@
 package delegatekotlin
 
-fun main() {
 
+fun main() {
+    val employee = Employee(OnBenchImplK(),AllocatesImplK())
+    employee.benchEmployee()
+    employee.allocatedEmployee()
 }

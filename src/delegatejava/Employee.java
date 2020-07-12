@@ -2,12 +2,12 @@ package delegatejava;
 
 public class Employee implements OnBench, Allocates {
 
-    OnBenchImpl onBench;
-    AllocatesImpl allocatesImpl;
+    OnBench onBench;
+    Allocates allocates;
 
-    Employee(OnBenchImpl onBench, AllocatesImpl allocatesImpl){
+    Employee(OnBench onBench, Allocates allocates){
         this.onBench = onBench;
-        this.allocatesImpl = allocatesImpl;
+        this.allocates = allocates;
     }
 
     @Override
@@ -17,6 +17,6 @@ public class Employee implements OnBench, Allocates {
 
     @Override
     public void allocatedEmployee() {
-        allocatesImpl.allocatedEmployee();
+        allocates.allocatedEmployee();
     }
 }
